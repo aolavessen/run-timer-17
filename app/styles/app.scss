@@ -14,13 +14,14 @@ $font-family: Roboto;
 $base-font-size: 16px;
 $base-line-height: 24px;
 
+
 body {
   margin: 0;
 }
 
 main {
 margin: auto;
-width: 60rem;
+max-width: 60rem;
 
 }
 
@@ -42,13 +43,16 @@ nav {
   flex-grow: 1;
   min-height: 100vh;
   height: 100%;
+  font-family: $font-family;
+  max-width: 60rem;
 }
 
 .run-list {
 margin-top: 0;
 text-decoration: none;
 display:flex;
-flex-direction: row;
+flex-direction: column;
+max-width: 60rem;
 
 }
 
@@ -58,12 +62,6 @@ flex-direction: row;
   width: 100%;
   margin: 1rem;
   border-bottom: 1px solid $regular-text;
-}
-
-.run-text {
-  margin: 0;
-  line-height: $base-line-height;
-  color: $regular-text;
 }
 
 footer {
@@ -80,4 +78,58 @@ footer {
   margin: 0;
   margin: 1rem;
   justify-content: flex-end;
+}
+
+
+.run-text {
+  margin: 0;
+  line-height: $base-line-height;
+  color: $regular-text;
+}
+
+
+
+.new-run-heading {
+  margin: 1rem;
+  color: $regular-text;
+}
+
+.new-run-buttons {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.run-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 60rem;
+
+}
+
+.new-run-input {
+  background: $background-primary;
+  color: $regular-text;
+  margin: 1rem;
+  line-height: $base-line-height;
+  border: 0;
+  border-bottom: 1px solid $placeholder-text;
+}
+
+::-webkit-input-placeholder {
+  color: $placeholder-text;
+}
+
+.new-run-save {
+  background: $button-green;
+  border-radius: 0.4rem;
+  border: 0;
+}
+
+.new-run-cancel {
+  background: $button-grey;
+  border-radius: 0.4rem;
+  border: 0;
+
 }

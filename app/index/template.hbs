@@ -1,11 +1,3 @@
-{{outlet}}
-<main>
-<nav>
-  <p class="navbar-heading">Run Timer</p>
-</nav>
-
-
-<div class="container">
 <div class="run-list">
   {{#each model as |run|}}
   <div class="run-list-item">
@@ -13,9 +5,10 @@
   </div>
   {{/each}}
 </div>
-</div>
+
 
 <footer>
+  {{#link-to "new"}}
   <p class="footer-text">{{fa-icon "plus-circle"}}</p>
+  {{/link-to}}
 </footer>
-</main>

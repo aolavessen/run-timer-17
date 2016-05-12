@@ -1,0 +1,18 @@
+
+
+{{outlet}}
+
+
+
+  <h2 class="new-run-heading">New Run</h2>
+<form {{action saveRun on="submit"}} class="run-form">
+  {{input class="new-run-input" type="text" placeholder="Race Time" value=time}}
+  {{input class="new-run-input" type="text" placeholder="Race Date" value=date}}
+  {{input class="new-run-input" type="text" placeholder="Race Notes" value=notes}}
+  <div class="new-run-buttons">
+    {{#link-to "index"}}
+<button class="new-run-cancel">CANCEL</button>
+    {{/link-to}}
+<button class="new-run-save">SAVE</button>
+  </div>
+</form>

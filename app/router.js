@@ -6,7 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('new-run');
+  this.route('new');
   this.route('run-detail');
   this.route('run-edit');
 });
