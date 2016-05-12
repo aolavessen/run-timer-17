@@ -59,25 +59,27 @@ max-width: 60rem;
 .run-list-item {
   display: flex;
   justify-content: space-between;
-  width: 100%;
   margin: 1rem;
   border-bottom: 1px solid $regular-text;
+  line-height: $base-line-height;
 }
+
+
 
 footer {
   color: $button-green;
   font-size: 5rem;
   background: $background-primary;
   display: flex;
+  justify-content: flex-end;
 
 }
 
 .footer-text {
   display: flex;
   width: 100%;
-  margin: 0;
   margin: 1rem;
-  justify-content: flex-end;
+
 }
 
 
@@ -85,6 +87,7 @@ footer {
   margin: 0;
   line-height: $base-line-height;
   color: $regular-text;
+
 }
 
 
@@ -104,7 +107,6 @@ footer {
 .run-form {
   display: flex;
   flex-direction: column;
-  max-width: 60rem;
 
 }
 
@@ -115,6 +117,7 @@ footer {
   line-height: $base-line-height;
   border: 0;
   border-bottom: 1px solid $placeholder-text;
+
 }
 
 ::-webkit-input-placeholder {
@@ -132,4 +135,44 @@ footer {
   border-radius: 0.4rem;
   border: 0;
 
+}
+
+.details-heading {
+  color: $regular-text;
+  margin: 1rem;
+}
+
+.details-date-time {
+  display: flex;
+  justify-content: space-between;
+  color: $regular-text;
+  margin: 1rem;
+}
+
+.detail-notes {
+  color: $regular-text;
+  margin: 1rem;
+}
+
+.details-time {
+  color: $green-text;
+}
+
+.bottom {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  border-radius: 50%;
+  border: 0;
+  font-size: 2rem;
+}
+
+.pencil {
+  border-radius: 50%;
+  border: 0;
+  font-size: 2rem;
+  background: $button-green;
 }

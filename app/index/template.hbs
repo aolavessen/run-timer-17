@@ -1,8 +1,10 @@
 <div class="run-list">
   {{#each model as |run|}}
+  {{#link-to "detail" run._id}}
   <div class="run-list-item">
     <p class="run-text">{{run.date}}</p> <p class="run-text">{{run.time}}</p>
   </div>
+  {{/link-to}}
   {{/each}}
 </div>
 

@@ -16,8 +16,14 @@ export default Ember.Controller.extend({
       body: JSON.stringify(attributes),
     }).then((res) => res.json()).then((run) =>
     {
-      // Redirect to index
+      this.transitionToRoute(`index`);
+      this.clearRunForm();
     });
+  },
+  clearRunForm() {
+    this.set(`time`, ``);
+    this.set(`date`, ``);
+    this.set(`notes`, ``);
   },
 
 
