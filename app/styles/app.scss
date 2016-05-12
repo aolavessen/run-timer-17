@@ -6,31 +6,58 @@ $regular-text: rgba(255, 255, 255, 0.6);
 $placeholder-text: rgba(255, 255, 255, 0.4);
 $green-text: #92cbc5;
 $button-text-grey: #1c1c1c;
+$font-family: Roboto;
+$icon-font: font-awesome;
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+
+
 
 
 body {
   margin: auto;
+
   // font-family:
 
 }
 
 .app {
+  margin: auto;
   display:flex;
+  flex-direction: column;
   height: 100%;
   min-height: 100vh;
+  width: 60rem;
 }
 
 .top-nav {
+  overflow: auto;
   margin: auto;
   background: $header-bar-blue
   // color: $title-white;
+
+
 }
 
 .container {
 
+
 }
 
 .app-container {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: $button-grey;
+  height: 95vh;
+  font-size: 16px;
 
 
+
+}
+
+.new-run__buttons {
+  display: flex;
+  justify-content: space-between;
 }

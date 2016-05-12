@@ -6,6 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('new-run');
+  this.route('run-detail');
+  this.route('run-edit');
 });
 
 export default Router;
