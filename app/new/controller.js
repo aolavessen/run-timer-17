@@ -7,7 +7,7 @@ export default Ember.Controller.extend({
       date: this.date,
       notes: this.notes,
     };
-    fetch(`http://tiny-tn.herokuapp.com/collections/runs-dm`, {
+    fetch(`http://tiny-tn.herokuapp.com/collections/runs-ao`, {
       method: `POST`,
       headers: {
         Accept: `application/json`,
