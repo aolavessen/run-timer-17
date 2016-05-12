@@ -1,9 +1,21 @@
+{{outlet}}
+<main>
+<nav>
+  <p class="navbar-heading">Run Timer</p>
+</nav>
 
-{{!-- {{outlet}}
-{{#each model as |run|}}
-  <h2>
-    {{link-to "run-detail" run._id}}
-      {{run.name}}
-      {{/link-to}}
-    </h2>
-    {{/each}} --}}
+
+<div class="container">
+<div class="run-list">
+  {{#each model as |run|}}
+  <div class="run-list-item">
+    <p class="run-text">{{run.date}}</p> <p class="run-text">{{run.time}}</p>
+  </div>
+  {{/each}}
+</div>
+</div>
+
+<footer>
+  <p class="footer-text">{{fa-icon "plus-circle"}}</p>
+</footer>
+</main>

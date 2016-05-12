@@ -6,58 +6,78 @@ $regular-text: rgba(255, 255, 255, 0.6);
 $placeholder-text: rgba(255, 255, 255, 0.4);
 $green-text: #92cbc5;
 $button-text-grey: #1c1c1c;
+$background-primary: #282828;
+
+
 $font-family: Roboto;
-$icon-font: font-awesome;
+
 $base-font-size: 16px;
 $base-line-height: 24px;
 
-
-
-
-
 body {
-  margin: auto;
+  margin: 0;
+}
 
-  // font-family:
+main {
+margin: auto;
+width: 60rem;
 
 }
 
-.app {
-  margin: auto;
-  display:flex;
-  flex-direction: column;
-  height: 100%;
-  min-height: 100vh;
-  width: 60rem;
-}
-
-.top-nav {
+nav {
+  background: $header-bar-blue;
+  color: $title-white;
   overflow: auto;
-  margin: auto;
-  background: $header-bar-blue
-  // color: $title-white;
+}
 
-
+.navbar-heading {
+  font-family: $font-family;
+  margin-left: 1rem;
 }
 
 .container {
-
-
-}
-
-.app-container {
+  background: $background-primary;
   display: flex;
   flex-direction: column;
-  background-color: black;
-  color: $button-grey;
-  height: 95vh;
-  font-size: 16px;
+  flex-grow: 1;
+  min-height: 100vh;
+  height: 100%;
+}
 
-
+.run-list {
+margin-top: 0;
+text-decoration: none;
+display:flex;
+flex-direction: row;
 
 }
 
-.new-run__buttons {
+.run-list-item {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  margin: 1rem;
+  border-bottom: 1px solid $regular-text;
+}
+
+.run-text {
+  margin: 0;
+  line-height: $base-line-height;
+  color: $regular-text;
+}
+
+footer {
+  color: $button-green;
+  font-size: 5rem;
+  background: $background-primary;
+  display: flex;
+
+}
+
+.footer-text {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  margin: 1rem;
+  justify-content: flex-end;
 }
