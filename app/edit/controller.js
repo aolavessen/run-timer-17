@@ -8,7 +8,7 @@ export default Ember.Controller.extend({
       method: `PUT`,
       headers: {
         Accept: `application/json`,
-        `Content-Type`: `application/json`,
+        'Content-Type': `application/json`,
       },
       body: JSON.stringify(attributes),
     }).then((results) => results.json())
