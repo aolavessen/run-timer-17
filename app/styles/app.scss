@@ -25,6 +25,10 @@ max-width: 60rem;
 
 }
 
+a:link {
+  text-decoration: none;
+}
+
 nav {
   background: $header-bar-blue;
   color: $title-white;
@@ -62,25 +66,32 @@ max-width: 60rem;
   margin: 1rem;
   border-bottom: 1px solid $regular-text;
   line-height: $base-line-height;
+  text-decoration: none;
 }
 
 
 
 footer {
   color: $button-green;
-  font-size: 2rem;
+  font-size: 1rem;
   background: $background-primary;
   display: flex;
   justify-content: flex-end;
+  margin: 1rem;
 
 }
 
 .footer-text {
   display: flex;
   width: 100%;
-  margin: 3rem;
+  margin: 0.5rem;
   text-decoration: none;
 
+}
+
+.footer-text-container {
+  background: $button-green;
+  border-radius: 50%;
 }
 
 
@@ -88,6 +99,7 @@ footer {
   margin: 0;
   line-height: $base-line-height;
   color: $regular-text;
+  text-decoration: none;
 
 }
 
