@@ -1,0 +1,21 @@
+<h2 class="details-heading">My Long Slow Run</h2>
+
+<div class="details-date-time">
+<p class="details-date">{{model.date}}</p>
+<p class="details-time">
+  {{model.time}}
+</p>
+</div>
+
+<div class="detail-notes">
+  <p class="detail-notes-text">{{model.notes}}</p>
+</div>
+
+<div class="bottom">
+    {{#link-to "index"}}
+  <button class="left"><i class="fa fa-chevron-left"></i></button>
+  {{/link-to}}
+  {{#link-to "edit" model._id}}
+  <button class="pencil"><i class="fa fa-pencil"></i></button>
+  {{/link-to}}
+</div>

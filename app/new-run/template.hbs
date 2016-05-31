@@ -1,0 +1,26 @@
+
+{{outlet}}
+<main>
+<nav>
+  <p class="navbar-heading">Run Timer</p>
+</nav>
+
+<div class="container">
+  <h2 class="new-run-heading">New Run</h2>
+<form class="run-form">
+  <input class="new-run-input" type="text" placeholder="Race Time">
+  <input class="new-run-input" type="text" placeholder="Race Date">
+  <input class="new-run-input" type="text" placeholder="Race Notes">
+  <div class="new-run-buttons">
+    {{#link-to "index"}}
+<button class="new-run-cancel">CANCEL</button>
+    {{/link-to}}
+<button class="new-run-save">SAVE</button>
+  </div>
+</form>
+</div>
+
+<footer>
+
+</footer>
+</main>

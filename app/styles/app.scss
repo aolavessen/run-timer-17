@@ -1,0 +1,231 @@
+$button-grey: #ddd;
+$button-green: #80cbc4;
+$header-bar-blue: #00bbd3;
+$title-white: #fff;
+$regular-text: rgba(255, 255, 255, 0.6);
+$placeholder-text: rgba(255, 255, 255, 0.4);
+$green-text: #92cbc5;
+$button-text-grey: #1c1c1c;
+$background-primary: #282828;
+
+
+$font-family: Roboto;
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+
+body {
+  margin: 0;
+}
+
+main {
+margin: auto;
+max-width: 60rem;
+
+}
+
+a:link {
+  text-decoration: none;
+}
+
+nav {
+  background: $header-bar-blue;
+  color: $title-white;
+  overflow: auto;
+}
+
+.navbar-heading {
+  font-family: $font-family;
+  margin-left: 1rem;
+}
+
+.container {
+  background: $background-primary;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100vh;
+  height: 100%;
+  font-family: $font-family;
+  max-width: 60rem;
+}
+
+.run-list {
+margin-top: 0;
+text-decoration: none;
+display:flex;
+flex-direction: column;
+max-width: 60rem;
+
+}
+
+.run-list-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  border-bottom: 1px solid $regular-text;
+  line-height: $base-line-height;
+  text-decoration: none;
+}
+
+
+
+footer {
+  color: $button-green;
+  font-size: 1rem;
+  background: $background-primary;
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem;
+
+}
+
+.footer-text {
+  display: flex;
+  width: 100%;
+  margin: 0.5rem;
+  text-decoration: none;
+
+}
+
+.footer-text-container {
+  background: $button-green;
+  border-radius: 50%;
+}
+
+
+.run-text {
+  margin: 0;
+  line-height: $base-line-height;
+  color: $regular-text;
+  text-decoration: none;
+
+}
+
+
+
+.new-run-heading {
+  margin: 1rem;
+  color: $regular-text;
+}
+
+.new-run-buttons {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.run-form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.new-run-input {
+  background: $background-primary;
+  color: $regular-text;
+  margin: 1rem;
+  line-height: $base-line-height;
+  border: 0;
+  border-bottom: 1px solid $placeholder-text;
+
+}
+
+::-webkit-input-placeholder {
+  color: $placeholder-text;
+}
+
+.new-run-save {
+  background: $button-green;
+  border-radius: 0.4rem;
+  border: 0;
+}
+
+.new-run-cancel {
+  background: $button-grey;
+  border-radius: 0.4rem;
+  border: 0;
+
+}
+
+.details-heading {
+  color: $regular-text;
+  margin: 1rem;
+}
+
+.details-date-time {
+  display: flex;
+  justify-content: space-between;
+  color: $regular-text;
+  margin: 1rem;
+}
+
+.detail-notes {
+  color: $regular-text;
+  margin: 1rem;
+}
+
+.details-time {
+  color: $green-text;
+}
+
+.bottom {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  border-radius: 50%;
+  border: 0;
+  font-size: 1rem;
+  padding: 1rem;
+
+}
+
+.pencil {
+  border-radius: 50%;
+  border: 0;
+  font-size: 1rem;
+  padding: 1rem;
+  background: $button-green;
+}
+
+.edit-heading {
+  color: $regular-text;
+  margin: 1rem;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  margin: 1rem;
+}
+
+.edit-input {
+  margin: 1rem;
+  background: $background-primary;
+  border: 0;
+  border-bottom: 1px solid $regular-text;
+  line-height: 24px;
+
+}
+
+.edit-buttons {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancel-edit {
+  background: $button-grey;
+  border: 0;
+}
+
+.save-edit {
+  background: $button-green;
+  border: 0;
+}

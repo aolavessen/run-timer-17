@@ -1,0 +1,15 @@
+<h2 class="edit-heading">New Run</h2>
+
+<form {{action editRun on="submit"}} class="edit-form">
+
+  {{input class="edit-input" type="text" placeholder="Race Time" value=model.time}}
+  {{input class="edit-input" type="text" placeholder="Race Date" value=model.date}}
+  {{input class="edit-input" type="text" placeholder="Race Notes" value=model.notes}}
+
+<div class="edit-buttons">
+  {{#link-to "detail" model._id}}
+  <button class="cancel-edit">Cancel</button>
+  {{/link-to}}
+  <button class="save-edit">Save</button>
+</div>
+</form>
